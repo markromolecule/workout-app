@@ -1,0 +1,21 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Auth application theme. -->
+    <style name="Base.Theme.ByteMeBaby" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <item name="android:windowBackground">@color/blue</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:fitsSystemWindows">false</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:navigationBarColor">@android:color/transparent</item>
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+    </style>
+
+    <!-- Home theme -->
+    <style name="Theme.Home" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="android:windowBackground">@color/dirty_white</item>
+        <item name="android:windowFullscreen">true</item>
+    </style>
+
+    <style name="Theme.ByteMeBaby" parent="Base.Theme.ByteMeBaby" />
+</resources>

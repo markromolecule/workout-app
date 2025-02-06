@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/home_fragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EEEEEE"
+    tools:context=".ui.main.home.HomeFragment">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/top_guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="75dp" />
+
+    <TextView
+        android:id="@+id/homeWelcomeText"
+        style="@style/HomeWelcomeText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="@string/hello_home_text"
+        app:layout_constraintEnd_toEndOf="@+id/homeUsernameText"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/homeUsernameText"
+        app:layout_constraintTop_toTopOf="@+id/top_guideline2" />
+
+    <TextView
+        android:id="@+id/homeUsernameText"
+        style="@style/HomeUsernameText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/username_text"
+        app:layout_constraintBottom_toTopOf="@+id/timerButton"
+        app:layout_constraintEnd_toEndOf="@+id/containerButton"
+        app:layout_constraintHorizontal_bias="0.043"
+        app:layout_constraintStart_toStartOf="@+id/timerButton"
+        app:layout_constraintTop_toBottomOf="@+id/homeWelcomeText"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageButton
+        android:id="@+id/timerButton"
+        style="@style/MainButton"
+        android:layout_width="130dp"
+        android:layout_height="230dp"
+        android:layout_marginBottom="440dp"
+        android:onClick="setupTimerButton"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/containerButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/timer_button_container" />
+
+    <ImageView
+        android:id="@+id/timerLogo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="false"
+        android:focusable="false"
+        app:layout_constraintBottom_toBottomOf="@+id/timerButton"
+        app:layout_constraintEnd_toEndOf="@+id/timerText2"
+        app:layout_constraintStart_toStartOf="@+id/timerText2"
+        app:layout_constraintTop_toTopOf="@+id/timerButton"
+        app:layout_constraintVertical_bias="0.426"
+        app:srcCompat="@drawable/timer_logo" />
+
+    <TextView
+        android:id="@+id/timerText2"
+        style="@style/ContainerStyleText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="false"
+        android:focusable="false"
+        android:text="@string/timer_text"
+        app:layout_constraintEnd_toEndOf="@+id/timerButton"
+        app:layout_constraintStart_toStartOf="@+id/timerButton"
+        app:layout_constraintTop_toBottomOf="@+id/timerLogo" />
+
+    <ScrollView
+        android:id="@+id/containerButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/timerButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/timerButton"
+        app:layout_constraintTop_toTopOf="@+id/timerButton"
+        app:layout_constraintVertical_bias="0.050000012">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/addWorkoutButton"
+                style="@style/ContainerButton"
+                android:onClick="setupWorkoutButton"
+                android:text="@string/add_workout_text" />
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

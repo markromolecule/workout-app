@@ -1,0 +1,89 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/parent_add_workout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.main.workout.AddWorkoutActivity">
+
+    <!-- ImageView for selecting photo -->
+    <ImageView
+        android:id="@+id/workoutImage"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="120dp"
+        android:clickable="true"
+        android:contentDescription="@string/workout_image"
+        android:focusable="true"
+        android:scaleType="centerCrop"
+        android:src="@android:drawable/ic_menu_camera"
+        app:layout_constraintEnd_toEndOf="@+id/workoutName"
+        app:layout_constraintStart_toStartOf="@+id/workoutName"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/workoutName"
+        style="@style/UsernameField"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:hint="@string/workout_name"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="@+id/workoutCategory"
+        app:layout_constraintStart_toStartOf="@+id/workoutCategory"
+        app:layout_constraintTop_toBottomOf="@+id/workoutImage" />
+
+    <Spinner
+        android:id="@+id/workoutCategory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        app:layout_constraintEnd_toEndOf="@+id/workoutDifficulty"
+        app:layout_constraintStart_toStartOf="@+id/workoutDifficulty"
+        app:layout_constraintTop_toBottomOf="@+id/workoutName" />
+
+    <Spinner
+        android:id="@+id/workoutDifficulty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        app:layout_constraintEnd_toEndOf="@+id/workoutDescription"
+        app:layout_constraintStart_toStartOf="@+id/workoutDescription"
+        app:layout_constraintTop_toBottomOf="@+id/workoutCategory" />
+
+    <EditText
+        android:id="@+id/workoutDescription"
+        style="@style/UsernameField"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:hint="@string/workout_description"
+        android:inputType="textMultiLine"
+        app:layout_constraintEnd_toEndOf="@+id/workoutInstrument"
+        app:layout_constraintStart_toStartOf="@+id/workoutInstrument"
+        app:layout_constraintTop_toBottomOf="@+id/workoutDifficulty" />
+
+    <EditText
+        android:id="@+id/workoutInstrument"
+        style="@style/UsernameField"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:hint="@string/workout_instruments"
+        android:inputType="textMultiLine"
+        app:layout_constraintEnd_toEndOf="@+id/submitWorkout"
+        app:layout_constraintStart_toStartOf="@+id/submitWorkout"
+        app:layout_constraintTop_toBottomOf="@+id/workoutDescription" />
+
+    <Button
+        android:id="@+id/submitWorkout"
+        style="@style/ButtonStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:text="@string/add_workout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/workoutInstrument" />
+</androidx.constraintlayout.widget.ConstraintLayout>
