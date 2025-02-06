@@ -45,7 +45,6 @@ dependencies {
     implementation(libs.constraintlayout)
     implementation(libs.room.common)
     implementation(libs.room.runtime)
-    implementation(libs.firebase.storage)
     implementation(libs.room.ktx)
     testImplementation(libs.junit)
     annotationProcessor ("com.github.bumptech.glide:compiler:4.15.1")
