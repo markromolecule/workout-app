@@ -62,8 +62,9 @@ public class SignupActivity extends AppCompatActivity {
         }
         // Create an instance of the AuthRepository
         AuthRepository authRepository = new AuthRepository();
+
         // Call the signUp method from AuthRepository
-        authRepository.signUp(fullname, username, email, password).enqueue(new Callback<LoginResponse>() {
+        authRepository.signUp(fullname, username, email, password).enqueue(new Callback<>() {
             @Override
             public void onResponse(@NonNull Call<LoginResponse> call, @NonNull Response<LoginResponse> response) {
                 if (response.isSuccessful()) {
@@ -73,7 +74,7 @@ public class SignupActivity extends AppCompatActivity {
                         System.out.println("isSuccess() Value: " + loginResponse.isSuccess());
                     }
                     if (loginResponse != null && loginResponse.isSuccess()) {
-                        showToast("Signup successful");
+                        showToast("Sign-up successful");
                         navigateToLogin();
                     } else {
                         showToast(loginResponse != null ? loginResponse.getMessage() : "Signup failed. Unknown error.");

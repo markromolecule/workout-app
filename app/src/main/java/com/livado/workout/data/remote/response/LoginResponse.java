@@ -18,7 +18,7 @@ public class LoginResponse {
     private User user;
 
     public boolean isSuccess() {
-        return "true".equalsIgnoreCase(success);
+        return "success".equalsIgnoreCase(success);
     }
 
     public String getMessage() {
@@ -52,7 +52,7 @@ public class LoginResponse {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         LoginResponse that = (LoginResponse) o;
-        return Objects.equals(success, that.success) &&
+        return  Objects.equals(success, that.success) &&
                 Objects.equals(message, that.message) &&
                 Objects.equals(user, that.user);
     }
