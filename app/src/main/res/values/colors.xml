@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="dirty_white">#EEEEEE</color>
+    <color name="blue">#35408E</color>
+
+    <!-- Selected Default color -->
+    <color name="default_routine">#FFFFFF</color>  <!-- White -->
+    <!-- Selected routine highlight color -->
+    <color name="selected_routine">#FFC107</color> <!-- Yellow/Gold -->
+</resources>

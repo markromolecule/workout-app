@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/parent_signup"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.auth.SignupActivity">
+
+    <!-- Guideline -->
+    <include layout="@layout/guidelines" />
+
+    <!-- Top Components -->
+    <ImageButton
+        android:id="@+id/backButton"
+        android:layout_width="@dimen/button_size"
+        android:layout_height="@dimen/button_size"
+        android:backgroundTint="#343F89"
+        android:contentDescription="@string/back_button_description"
+        android:onClick="setupBackButton"
+        android:translationX="-20dp"
+        app:layout_constraintBottom_toTopOf="@+id/helloText"
+        app:layout_constraintEnd_toEndOf="@+id/helloText"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/helloText"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/back_arrow" />
+
+    <!-- Header Section -->
+    <TextView
+        android:id="@+id/helloText"
+        style="@style/HeaderText"
+        android:text="@string/hello_text"
+        android:translationY="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/nationalianText"
+        app:layout_constraintEnd_toEndOf="@+id/nationalianText"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/nationalianText" />
+
+    <!-- Bottom Components -->
+    <TextView
+        android:id="@+id/nationalianText"
+        style="@style/HeaderMediumText"
+        android:text="@string/create_text"
+        app:layout_constraintBottom_toTopOf="@id/bottomContainer"
+        app:layout_constraintEnd_toStartOf="@+id/end_margin"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/start_margin"
+        app:layout_constraintTop_toTopOf="@+id/top_margin"
+        app:layout_constraintVertical_bias="0.315" />
+
+    <ImageView
+        android:id="@+id/bottomContainer"
+        android:contentDescription="@string/rounded_box_description"
+
+        style="@style/RoundContainer"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/bottom_margin"
+        app:srcCompat="@drawable/round_rectangle_shape" />
+
+    <TextView
+        android:id="@+id/fullNameText"
+        style="@style/BodyText"
+        android:layout_marginTop="264dp"
+        android:text="@string/fullname_text"
+        app:layout_constraintEnd_toEndOf="@+id/fullNameField"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/fullNameField"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/fullNameField"
+        style="@style/FullnameField"
+        android:layout_marginTop="@dimen/margin_top"
+        android:text="@string/fullname_field"
+        app:layout_constraintEnd_toEndOf="@+id/usernameField"
+        app:layout_constraintStart_toStartOf="@+id/usernameField"
+        app:layout_constraintTop_toBottomOf="@+id/fullNameText" />
+
+    <TextView
+        android:id="@+id/usernameText"
+        style="@style/BodyText"
+        android:layout_marginTop="32dp"
+        android:text="@string/username_text"
+        app:layout_constraintEnd_toEndOf="@+id/usernameField"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/usernameField"
+        app:layout_constraintTop_toBottomOf="@+id/fullNameField" />
+
+    <EditText
+        android:id="@+id/usernameField"
+        style="@style/UsernameField"
+        android:text="@string/username_field"
+        android:layout_marginTop="@dimen/margin_top"
+
+        app:layout_constraintEnd_toEndOf="@+id/emailField"
+        app:layout_constraintStart_toStartOf="@+id/emailField"
+        app:layout_constraintTop_toBottomOf="@+id/usernameText" />
+
+    <TextView
+        android:id="@+id/emailText"
+        style="@style/BodyText"
+        android:layout_marginTop="32dp"
+        android:text="@string/email_text"
+        app:layout_constraintEnd_toEndOf="@+id/emailField"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/emailField"
+        app:layout_constraintTop_toBottomOf="@+id/usernameField" />
+
+    <EditText
+        android:id="@+id/emailField"
+        style="@style/EmailField"
+        android:layout_marginTop="@dimen/margin_top"
+        android:text="@string/fullname_field"
+        app:layout_constraintEnd_toEndOf="@+id/passwordField"
+        app:layout_constraintStart_toStartOf="@+id/passwordField"
+        app:layout_constraintTop_toBottomOf="@+id/emailText" />
+
+    <TextView
+        android:id="@+id/passwordText"
+        style="@style/BodyText"
+        android:layout_marginTop="32dp"
+        android:text="@string/password_text"
+        app:layout_constraintEnd_toEndOf="@+id/passwordField"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/passwordField"
+        app:layout_constraintTop_toBottomOf="@+id/emailField" />
+
+    <EditText
+        android:id="@+id/passwordField"
+        style="@style/PasswordField"
+        android:layout_marginTop="@dimen/margin_top"
+        android:text="@string/password_field"
+        app:layout_constraintEnd_toEndOf="@+id/signupButton"
+        app:layout_constraintStart_toStartOf="@+id/signupButton"
+        app:layout_constraintTop_toBottomOf="@+id/passwordText" />
+
+    <Button
+        android:id="@+id/signupButton"
+        style="@style/ButtonStyle"
+        android:layout_marginTop="42dp"
+        android:text="@string/signup_text_button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/passwordField"
+        app:layout_constraintVertical_bias="0.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

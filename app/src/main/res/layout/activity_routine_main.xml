@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.main.workout.RoutineMainActivity">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/top_navbar"
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:contentDescription="@string/top_navbar_description"
+            app:srcCompat="@drawable/top_navbar" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/routineBackButton"
+                android:layout_width="@dimen/button_size"
+                android:layout_height="@dimen/button_size"
+                android:layout_gravity="start"
+                android:layout_marginStart="20dp"
+                android:backgroundTint="@color/blue"
+                android:contentDescription="@string/back_button_description"
+                android:onClick="setupBackButton"
+                app:srcCompat="@drawable/back_arrow" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="2" />
+
+            <ImageButton
+                android:id="@+id/confirmButton"
+                android:layout_width="@dimen/button_size"
+                android:layout_height="@dimen/button_size"
+                android:layout_gravity="end"
+                android:layout_marginEnd="20dp"
+                android:backgroundTint="@color/blue"
+                android:contentDescription="@string/back_button_description"
+                app:srcCompat="@drawable/done_button" />
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/containerBox"
+                android:layout_width="370dp"
+                android:layout_height="480dp"
+                android:layout_gravity="center"
+                app:srcCompat="@drawable/container_box" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <!-- Workout Name -->
+            <TextView
+                android:id="@+id/workoutName"
+                style="@style/FragmentText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:text="@string/workout_name"
+                android:textAllCaps="true" />
+
+            <!-- Workout Image -->
+            <ImageView
+                android:id="@+id/workoutImage"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                app:srcCompat="@drawable/placeholder_image" />
+
+            <!-- Timer Text (HH:MM:SS) -->
+            <TextView
+                android:id="@+id/timerText"
+                style="@style/FragmentNum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:text="00:00:00" />
+
+            <!-- Play and Stop Buttons -->
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/repsText"
+                        style="@style/FragmentText"
+                        android:translationY="10dp"
+                        android:text="@string/reps_text_routine"
+                        android:textAllCaps="true" />
+
+                    <TextView
+                        android:id="@+id/repsNum"
+                        style="@style/FragmentNumLarge"
+                        android:layout_marginBottom="10dp"
+                        android:text="0" />
+                </LinearLayout>
+
+                <ImageButton
+                    android:id="@+id/playButton"
+                    style="@style/RoutineButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:translationX="10dp"
+                    app:srcCompat="@drawable/play_circle" />
+
+                <ImageButton
+                    android:id="@+id/stopButton"
+                    style="@style/RoutineButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:translationX="-10dp"
+                    app:srcCompat="@drawable/stop_circle" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/setsText"
+                        style="@style/FragmentText"
+                        android:translationY="10dp"
+                        android:text="@string/sets_text_routine"
+                        android:textAllCaps="true" />
+
+                    <TextView
+                        android:id="@+id/setsNum"
+                        style="@style/FragmentNumLarge"
+                        android:layout_marginBottom="10dp"
+                        android:text="0" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:orientation="vertical">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/workoutProgressRecyclerView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:overScrollMode="never"
+                    android:scrollbars="none"
+                    tools:listitem="@layout/recycle_view_progress_workout" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+</LinearLayout>

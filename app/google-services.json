@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "845233825424",
+    "project_id": "byte-me-baby",
+    "storage_bucket": "byte-me-baby.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:845233825424:android:e7f2606bbe9106ccd0da15",
+        "android_client_info": {
+          "package_name": "com.livado.workout"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAGDU2SmWssFfIdcEiQ7TpFVKjUO6cgjTY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

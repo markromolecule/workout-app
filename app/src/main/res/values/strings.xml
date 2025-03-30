@@ -1,0 +1,107 @@
+<resources>
+    <string name="app_name">auth</string>
+    <!-- textview : login form  -->
+    <string name="welcome_text">Welcome</string>
+    <string name="hello_text">Hello!</string>
+    <string name="nationalian_text">Nationalian!</string>
+    <string name="create_text">Create an Account!</string>
+    <string name="dont_have_an_account_text">Don\'t have an account?</string>
+
+    <!-- textview : signup form  -->
+    <string name="username_text">Username</string>
+    <string name="password_text">Password</string>
+    <string name="fullname_text">Fullname</string>
+    <string name="email_text">Email</string>
+
+    <!-- textfield : signup form/login form -->
+    <string name="username_field"></string>
+    <string name="password_field"></string>
+    <string name="fullname_field"></string>
+    <string name="email_field"></string>
+
+    <!-- button : signup form/login form -->
+    <string name="login_text">LOGIN</string>
+    <string name="signup_text">Sign-up</string>
+    <string name="signup_text_button">SIGN-UP</string>
+    <string name="forgot_password_text">Forgot password?</string>
+
+    <!-- content description -->
+    <string name="rounded_box_description">Rounded decorative box background</string>
+    <string name="top_navbar_description">Navigation Bar</string>
+    <string name="nu_logo_low_opacity">Logo</string>
+    <string name="profile_button_description">Profile</string>
+    <string name="back_button_description">Navigate back</string>
+
+    <!-- textview : home form  -->
+    <string name="nufit_text">NU FIT</string>
+
+    <!-- Container Text-->
+    <string name="timer_text">Timer</string>
+    <string name="add_workout_text">Add Workout</string>
+    <string name="new_workout_text">New Workout</string>
+
+    <!-- Headers -->
+    <string name="hello_home_text">Hello,</string>
+
+    <!-- Card view Components -->
+    <string name="workout_name">Workout Name</string>
+    <string name="workout_equipment">Equipment:</string>
+    <string name="workout_description">Description</string>
+    <string name="workout_difficulty">Difficulty</string>
+    <string name="workout_count">5</string>
+    <string name="workout_duration">60</string>
+    <string name="workout_duration_text">minutes</string>
+    <string name="workout_count_text">EXERCISE</string>
+    <string name="routine_name">Routine Name</string>
+    <string name="routine_name_header">Routines</string>
+    <string name="in_progress_header">In-Progress</string>
+    <string name="complete_header">Complete</string>
+    <string name="workout_name_header">Workouts</string>
+    <string name="container_description">This is a container</string>
+
+    <string name="confirm_dialog">Start your routine!</string>
+
+
+    <!-- Workout Categories -->
+    <string-array name="workout_categories">
+        <item>Upper Body Workout</item>
+        <item>Lower Body Workout</item>
+        <item>Core Workout</item>
+    </string-array>
+
+    <!-- Workout Difficulty -->
+    <string-array name="workout_difficulty">
+        <item>Beginner</item>
+        <item>Intermediate</item>
+        <item>Advanced</item>
+    </string-array>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="category_name">Category Name</string>
+
+    <!-- Dialog Text -->
+    <string name="dialog_title">Customize your workout</string>
+    <string name="sets_text">Enter Sets</string>
+    <string name="reps_text">Enter Reps</string>
+    <string name="duration_text">Enter Duration</string>
+    <string name="continue_text">Continue</string>
+    <string name="cancel_text">Cancel</string>
+    <string name="create_text_dialog">CREATE</string>
+    <string name="custom_workout_text_dialog">WORKOUT NAME</string>
+
+    <string name="reps_text_routine">Reps</string>
+    <string name="sets_text_routine">Sets</string>
+
+    <string-array name="gender_options">
+        <item>Male</item>
+        <item>Female</item>
+    </string-array>
+
+    <string name="height_text">Height</string>
+    <string name="weight_text">Weight</string>
+
+    <string name="complete_text">Completed</string>
+    <string name="in_progress_text">In-progress</string>
+
+
+</resources>

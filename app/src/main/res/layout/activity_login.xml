@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/parent_login"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.auth.LoginActivity">
+
+    <!-- Guideline -->
+    <include layout="@layout/guidelines" />
+
+    <!-- Top Components -->
+
+    <!-- Header Section -->
+    <TextView
+        android:id="@+id/helloText"
+        style="@style/HeaderText"
+        android:text="@string/welcome_text"
+        android:translationY="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/nationalianText"
+        app:layout_constraintEnd_toEndOf="@+id/nationalianText"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/nationalianText" />
+
+    <TextView
+        android:id="@+id/nationalianText"
+        style="@style/HeaderBoldText"
+        android:text="@string/nationalian_text"
+        app:layout_constraintBottom_toTopOf="@id/bottomContainer"
+        app:layout_constraintEnd_toStartOf="@+id/end_margin"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/start_margin"
+        app:layout_constraintTop_toTopOf="@+id/top_margin"
+        app:layout_constraintVertical_bias="0.314" />
+
+    <!-- Bottom Components -->
+    <ImageView
+        android:id="@+id/bottomContainer"
+        style="@style/RoundContainer"
+        android:contentDescription="@string/rounded_box_description"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/bottom_margin"
+        app:srcCompat="@drawable/round_rectangle_shape" />
+
+    <TextView
+        android:id="@+id/usernameText"
+        style="@style/BodyText"
+        android:layout_marginTop="344dp"
+        android:text="@string/username_text"
+        app:layout_constraintEnd_toEndOf="@+id/usernameField"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/usernameField"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/usernameField"
+        style="@style/UsernameField"
+        android:layout_marginTop="@dimen/margin_top"
+        android:text="@string/username_field"
+        app:layout_constraintEnd_toEndOf="@+id/passwordField"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/passwordField"
+        app:layout_constraintTop_toBottomOf="@+id/usernameText" />
+
+    <TextView
+        android:id="@+id/passwordText"
+        style="@style/BodyText"
+        android:layout_marginTop="35dp"
+        android:text="@string/password_text"
+        app:layout_constraintEnd_toEndOf="@+id/passwordField"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/passwordField"
+        app:layout_constraintTop_toBottomOf="@+id/usernameField" />
+
+    <EditText
+        android:id="@+id/passwordField"
+        style="@style/PasswordField"
+        android:layout_marginTop="@dimen/margin_top"
+        android:text="@string/password_field"
+        app:layout_constraintEnd_toEndOf="@+id/loginButton"
+        app:layout_constraintStart_toStartOf="@+id/loginButton"
+        app:layout_constraintTop_toBottomOf="@+id/passwordText" />
+
+    <Button
+        android:id="@+id/forgotPasswordButton"
+        style="@style/NoBorderButton"
+        android:layout_marginTop="@dimen/margin_top"
+        android:alpha="0.3"
+        android:text="@string/forgot_password_text"
+        android:translationY="-20dp"
+        app:layout_constraintEnd_toEndOf="@+id/passwordField"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/passwordField"
+        app:layout_constraintTop_toBottomOf="@+id/passwordField" />
+
+    <Button
+        android:id="@+id/loginButton"
+        style="@style/ButtonStyle"
+        android:layout_marginTop="20dp"
+        android:text="@string/login_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/forgotPasswordButton" />
+
+    <TextView
+        android:id="@+id/dontHaveAnAccountText"
+        style="@style/LowOpacityText"
+        android:alpha="0.3"
+        android:text="@string/dont_have_an_account_text"
+        android:translationX="4dp"
+        android:translationY="-15dp"
+        app:layout_constraintBottom_toBottomOf="@+id/signUpButton"
+        app:layout_constraintEnd_toEndOf="@+id/loginButton"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/loginButton"
+        app:layout_constraintTop_toTopOf="@+id/signUpButton" />
+
+    <Button
+        android:id="@+id/signUpButton"
+        style="@style/NoBorderButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="setupSignUpButton"
+        android:text="@string/signup_text"
+        android:translationX="5dp"
+        android:translationY="-15dp"
+        app:layout_constraintBottom_toBottomOf="@+id/bottomContainer"
+        app:layout_constraintEnd_toEndOf="@+id/loginButton"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/loginButton"
+        app:layout_constraintTop_toBottomOf="@+id/loginButton"
+        app:layout_constraintVertical_bias="0.0" />
+</androidx.constraintlayout.widget.ConstraintLayout>

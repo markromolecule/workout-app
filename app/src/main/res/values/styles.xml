@@ -1,0 +1,361 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Container -->
+    <style name="RoundContainer">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_marginTop">@dimen/container_margin_top</item>
+    </style>
+
+    <!-- Text -->
+
+    <style name="NewContainerStyleText">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:fontFamily">@font/rem_bold</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:clickable">false</item>
+        <item name="android:focusable">false</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="FragmentText">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:fontFamily">@font/rem_bold</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="HeaderFragmentText">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:fontFamily">@font/rem_bold</item>
+        <item name="android:textSize">22sp</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="FragmentNum">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:fontFamily">@font/rem_bold</item>
+        <item name="android:textSize">36sp</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="FragmentNumLarge">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:fontFamily">@font/rem_bold</item>
+        <item name="android:textSize">50sp</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="LowOpacityText">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:fontFamily">@font/rem_medium</item>
+        <item name="android:textColor">#000000</item>
+        <item name="android:textSize">13sp</item>
+    </style>
+
+    <style name="BodyText">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:fontFamily">@font/rem_medium</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">#000000</item>
+    </style>
+
+    <style name="HeaderText">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:fontFamily">@font/rem_regular</item>
+        <item name="android:textSize">@dimen/header_regular</item>
+        <item name="android:textColor">#FFFFFF</item>
+    </style>
+
+    <style name="HeaderMediumText">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:fontFamily">@font/rem_medium</item>
+        <item name="android:textSize">@dimen/header_regular</item>
+        <item name="android:textColor">#FFFFFF</item>
+    </style>
+
+    <style name="HeaderBoldText">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:fontFamily">@font/rem_bold</item>
+        <item name="android:textSize">@dimen/header_regular_bold</item>
+        <item name="android:textColor">#FFFFFF</item>
+    </style>
+
+    <!-- Home Styles -->
+    <style name="TitleBoldText">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:fontFamily">@font/rem_bold</item>
+        <item name="android:textSize">@dimen/title_regular_bold</item>
+        <item name="android:textColor">#FFFFFF</item>
+    </style>
+
+    <style name="HomeUsernameText">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:fontFamily">@font/rem_bold</item>
+        <item name="android:textSize">38sp</item>
+        <item name="android:textColor">#000000</item>
+    </style>
+
+    <style name="HomeWelcomeText">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:fontFamily">@font/rem_bold</item>
+        <item name="android:textSize">@dimen/text_regular</item>
+        <item name="android:textColor">#979797</item>
+    </style>
+
+    <style name="ContainerStyleText">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:fontFamily">@font/rem_bold</item>
+        <item name="android:textSize">@dimen/title_regular</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="DynamicContainerStyleText">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:fontFamily">@font/rem_bold</item>
+        <item name="android:textSize">24sp</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="SmallDynamicContainerStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:fontFamily">@font/rem_bold</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="SubDynamicContainerStyleText">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:fontFamily">@font/rem_bold</item>
+        <item name="android:textSize">10sp</item>
+        <item name="android:textColor">#959595</item>
+    </style>
+
+    <style name="DescriptionDynamic">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:fontFamily">@font/rem_bold</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">#959595</item>
+    </style>
+
+    <style name="CategoryStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:fontFamily">@font/rem_bold</item>
+        <item name="android:textSize">@dimen/title_regular</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="DialogStyleText">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:fontFamily">@font/rem_bold</item>
+        <item name="android:textSize">@dimen/title_regular</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="DialogDescriptionStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:fontFamily">@font/rem_regular</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="HeaderRoutine">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:fontFamily">@font/rem_bold</item>
+        <item name="android:textSize">@dimen/title_regular</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+
+    <!--TextField-->
+    <style name="PasswordField">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:ems">14</item>
+        <item name="android:hint">Enter your password</item>
+        <item name="android:fontFamily">@font/rem_regular</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">#000000</item>
+        <item name="android:inputType">textPassword</item>
+    </style>
+
+    <style name="UsernameField">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:ems">14</item>
+        <item name="android:hint">Enter your username</item>
+        <item name="android:autofillHints">username</item>
+        <item name="android:fontFamily">@font/rem_regular</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">#000000</item>
+        <item name="android:inputType">text</item>
+    </style>
+
+    <style name="WorkoutDialogField">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:ems">14</item>
+        <item name="android:hint">Enter Workout Name</item>
+        <item name="android:autofillHints">workout</item>
+        <item name="android:fontFamily">@font/rem_regular</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">#000000</item>
+        <item name="android:inputType">text</item>
+    </style>
+
+    <style name="FullnameField">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:ems">14</item>
+        <item name="android:hint">Juan Dela Cruz</item>
+        <item name="android:autofillHints">fullname</item>
+        <item name="android:fontFamily">@font/rem_regular</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">#000000</item>
+        <item name="android:inputType">text</item>
+    </style>
+
+    <style name="EmailField">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:ems">14</item>
+        <item name="android:hint">juandelacruz@gmail.com</item>
+        <item name="android:autofillHints">email</item>
+        <item name="android:fontFamily">@font/rem_regular</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">#000000</item>
+        <item name="android:inputType">textEmailAddress</item>
+    </style>
+
+    <style name="ProfileField">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:ems">14</item>
+        <item name="android:fontFamily">@font/rem_regular</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:inputType">text</item>
+    </style>
+
+    <style name="SmallField">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:ems">6</item>
+        <item name="android:fontFamily">@font/rem_regular</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:inputType">numberDecimal</item>
+    </style>
+
+    <!-- Button Style -->
+    <style name="ButtonStyle">
+        <item name="android:layout_width">220dp</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="android:backgroundTint">#343F89</item>
+        <item name="android:clickable">true</item>
+        <item name="android:focusable">true</item>
+        <item name="android:fontFamily">@font/rem_bold</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <style name="TimerButton">
+        <item name="android:layout_width">220dp</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="android:backgroundTint">#242c64</item>
+        <item name="android:clickable">true</item>
+        <item name="android:focusable">true</item>
+        <item name="android:fontFamily">@font/rem_bold</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <style name="RoutineButton">
+        <item name="android:layout_width">220dp</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="android:backgroundTint">@color/white</item>
+        <item name="android:clickable">true</item>
+        <item name="android:focusable">true</item>
+    </style>
+
+    <style name="NoBorderButton">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:fontFamily">@font/rem_medium</item>
+        <item name="android:textColor">#000000</item>
+        <item name="android:padding">0dp</item>
+        <item name="android:backgroundTint">#343F89</item>
+        <item name="android:clickable">true</item>
+        <item name="android:focusable">true</item>
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+
+    <style name="ContainerButton">
+        <item name="android:backgroundTint">#343F89</item>
+        <item name="android:layout_height">180dp</item>
+        <item name="android:layout_width">120dp</item>
+        <item name="android:clickable">true</item>
+        <item name="android:focusable">true</item>
+        <item name="android:scaleType">fitCenter</item>
+        <item name="android:fontFamily">@font/rem_bold</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <style name="NewContainerButton">
+        <item name="android:backgroundTint">@color/white</item>
+        <item name="android:layout_height">85dp</item>
+        <item name="android:layout_width">230dp</item>
+        <item name="android:clickable">true</item>
+        <item name="android:focusable">true</item>
+        <item name="android:scaleType">fitCenter</item>
+        <item name="android:fontFamily">@font/rem_bold</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">40sp</item>
+    </style>
+
+    <style name="MainButton">
+        <item name="android:backgroundTint">#EEEEEE</item>
+        <item name="android:clickable">true</item>
+        <item name="android:focusable">true</item>
+    </style>
+
+    <style name="ProfileButton">
+        <item name="android:backgroundTint">@color/white</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:clickable">true</item>
+        <item name="android:focusable">true</item>
+        <item name="android:fontFamily">@font/rem_bold</item>
+        <item name="android:layout_height">60dp</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <style name="SpinnerText" parent="Theme.AppCompat.Light">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+</resources>

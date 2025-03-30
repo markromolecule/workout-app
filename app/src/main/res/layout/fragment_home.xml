@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/home_fragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EEEEEE"
+    tools:context=".ui.main.home.HomeFragment">
+
+    <!-- FrameLayout containing Image and Table -->
+    <FrameLayout
+        android:id="@+id/topContainer"
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="350dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/inverted_round_rectangle_shape" />
+
+        <TableLayout
+            android:id="@+id/table"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:gravity="center">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginEnd="40dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/homeWelcomeText"
+                        style="@style/HomeWelcomeText"
+                        android:gravity="center"
+                        android:text="@string/hello_home_text"
+                        android:translationY="10dp" />
+
+                    <TextView
+                        android:id="@+id/homeUsernameText"
+                        style="@style/HomeUsernameText"
+                        android:gravity="center"
+                        android:text="@string/username_text" />
+                </LinearLayout>
+
+            </TableRow>
+
+            <TableRow>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/heightText"
+                        style="@style/FragmentText"
+                        android:layout_marginStart="30dp"
+                        android:layout_marginEnd="30dp"
+                        android:gravity="center"
+                        android:paddingStart="40dp"
+                        android:paddingEnd="40dp"
+                        android:text="@string/height_text"
+                        android:textAllCaps="true" />
+
+                    <TextView
+                        android:id="@+id/weightText"
+                        style="@style/FragmentText"
+                        android:layout_marginEnd="30dp"
+                        android:gravity="center"
+                        android:paddingStart="40dp"
+                        android:paddingEnd="40dp"
+                        android:text="@string/weight_text"
+                        android:textAllCaps="true" />
+
+                </LinearLayout>
+            </TableRow>
+
+            <TableRow>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/heightNum"
+                        style="@style/FragmentNum"
+                        android:layout_marginStart="50dp"
+                        android:text="0.00" />
+
+                    <TextView
+                        android:id="@+id/heightCm"
+                        style="@style/FragmentText"
+                        android:layout_marginEnd="70dp"
+                        android:text="cm" />
+
+                    <TextView
+                        android:id="@+id/weightNum"
+                        style="@style/FragmentNum"
+                        android:text="0.00" />
+
+                    <TextView
+                        android:id="@+id/weightKg"
+                        style="@style/FragmentText"
+                        android:layout_marginEnd="50dp"
+                        android:text="kg" />
+                </LinearLayout>
+            </TableRow>
+
+        </TableLayout>
+
+    </FrameLayout>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/topContainer"
+        android:layout_marginTop="0dp">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="20dp">
+
+                    <ImageButton
+                        android:id="@+id/workoutButton"
+                        style="@style/ContainerButton"
+                        android:background="@drawable/button_container"
+                        android:scaleType="fitXY" />
+
+                    <ImageView
+                        android:id="@+id/workoutLogo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/exercise" />
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1">
+
+                        <Button
+                            android:id="@+id/inProgressButton"
+                            style="@style/NewContainerButton"
+                            android:paddingTop="15dp"
+                            android:text="0"
+                            app:layout_constraintEnd_toEndOf="@+id/completeButton"
+                            app:layout_constraintStart_toStartOf="@+id/completeButton"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            android:id="@+id/inProgressText"
+                            style="@style/NewContainerStyleText"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="40dp"
+                            android:text="@string/in_progress_text"
+                            android:textAllCaps="true"
+                            app:layout_constraintBottom_toBottomOf="@+id/inProgressButton"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="@+id/inProgressButton"
+                            app:layout_constraintTop_toTopOf="@+id/inProgressButton" />
+
+                        <Button
+                            android:id="@+id/completeButton"
+                            style="@style/NewContainerButton"
+                            android:layout_marginTop="10dp"
+                            android:paddingTop="15dp"
+                            android:text="0"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/inProgressButton" />
+
+                        <TextView
+                            android:id="@+id/completedText"
+                            style="@style/NewContainerStyleText"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="40dp"
+                            android:text="@string/complete_text"
+                            android:textAllCaps="true"
+                            app:layout_constraintBottom_toBottomOf="@+id/completeButton"
+                            app:layout_constraintEnd_toEndOf="@+id/completeButton"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="@+id/completeButton" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:gravity="center">
+
+            <TextView
+                style="@style/HeaderFragmentText"
+                android:padding="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:id="@+id/recomText"
+                android:textAllCaps="true"
+                android:text="Recommendation" />
+
+        </TableRow>
+
+    </TableLayout>
+
+</RelativeLayout>
